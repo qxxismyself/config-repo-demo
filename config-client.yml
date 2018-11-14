@@ -1,5 +1,7 @@
 info:
   profile: dev
   from: git1
+  to: haha
+  hello: 123
   
 test: bbb
