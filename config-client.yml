@@ -1,22 +1,22 @@
 info:
   profile: default
   from: git1
-  spring:
-    datasource:
-      url: jdbc:sqlserver://192.168.1.235;DatabaseName=diyigaokaoTest
-      username: diyigaokao_admin
-      password: gk123456
-      driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
-    application:
-        name: eureka-client
-  server:
-    port: 2001
-  eureka:
-    client:
-      serviceUrl:
-        defaultZone: http://localhost:1001/eureka/
+spring:
+  datasource:
+    url: jdbc:sqlserver://192.168.1.235;DatabaseName=diyigaokaoTest
+    username: diyigaokao_admin
+    password: gk123456
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  application:
+      name: eureka-client
+server:
+  port: 2001
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1001/eureka/
 #eureka.client.serviceUrl.defaultZone=http://peer1:1001/eureka/,http://peer2:1002/eureka/
-  logging:
-    file: ${spring.application.name}.log
+logging:
+  file: ${spring.application.name}.log
 
 
